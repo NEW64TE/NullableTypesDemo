@@ -6,7 +6,12 @@ namespace NullableTypesDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DateTime? date = null;
+
+            Console.WriteLine("GetValueOrDefault(): " + date.GetValueOrDefault());
+            Console.WriteLine("HasValue: " + date.HasValue);
+            Console.WriteLine("Value: " + date.Value);
+
         }
     }
 }
